@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Planner</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Your HTML content here -->
+    <div class="roadmap-planner">
+        <div class="roadmap-header">
+            <button id="addLaneBtn">+ Add lane</button>
+            <button id="addBarBtn">+ Add bar</button>
+            <button id="addMarkerBtn">+ Add marker</button>
+            <div class="view-by">
+                View by
+                <select>
+                    <option value="months">Months</option>
+                    <option value="weeks">Weeks</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="date-range">
+                <input type="date" id="startDate" value="2024-04-11">
+                -
+                <input type="date" id="endDate" value="2025-03-11">
+            </div>
+        </div>
+
+        <!-- Roadmap body will be populated by JavaScript -->
+        <div class="roadmap-body" id="roadmapBody"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+
+</html>
